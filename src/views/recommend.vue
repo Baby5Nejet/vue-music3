@@ -5,8 +5,12 @@
 </template>
 
 <script>
+import { getRecommend } from '@/service/recommend'
 export default {
-  name: 'recommend'
+  name: 'recommend',
+  created () {
+    getRecommend()
+  }
 }
 </script>
 
