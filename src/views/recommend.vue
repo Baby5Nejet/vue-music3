@@ -8,8 +8,9 @@
 import { getRecommend } from '@/service/recommend'
 export default {
   name: 'recommend',
-  created () {
-    getRecommend()
+  async created () {
+    const result = await getRecommend()
+    console.log(result)
   }
 }
 </script>
